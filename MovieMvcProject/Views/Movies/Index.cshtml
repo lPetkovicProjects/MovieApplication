@@ -1,0 +1,23 @@
+﻿@model IEnumerable<MovieMvcProject.Models.Movie>
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Movies</h2>
+
+
+@foreach (var item in Model)
+{
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs1-8 col-xs-12">
+            <div class="thumbnail">
+                <img src="~/images/@Html.DisplayFor(model =>item.ImagePath)" />
+                <div class="caption">
+                    @Html.ActionLink(item.Name, "Details", new { id = item.MovieId })                     
+                </div>  
+            </div>
+        </div>
+    
+}
+

@@ -1,0 +1,32 @@
+﻿@model IEnumerable<MovieMvcProject.Models.Genre>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@foreach (var genre in @Model)
+{
+
+
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs1-8 col-xs-12">
+        <div class="thumbnail">         
+            <div class="caption">
+                @Html.ActionLink(genre.Name, "Index", "Movies", new { genreid = genre.Id }, null)
+            </div>
+        </div>
+    </div>
+
+
+
+    
+  
+}
+
+
+
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>

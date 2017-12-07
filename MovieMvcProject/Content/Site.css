@@ -1,0 +1,106 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 13px;
+    font-family: Roboto,sans-serif;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+   
+}
+
+.col-lg-3 {
+    width: 18%;
+}
+
+ 
+.col-lg-3 col-md-4 col-sm-6 col-xs1-8 col-xs-12{
+    width:70%;
+}
+
+        footer {
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .container {
+            width: 1300px;
+        }
+
+.thumbnail .caption {
+    padding: 10px;
+    color: #767474;
+    font-size: 150%;
+    text-align: center;
+}
+.thumbnail {
+    display: inline-block;
+    display: block;
+    height: auto;
+    padding: 0px;
+    line-height: 1.428571;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.genre{
+    text-align:center;
+    color:#000000;
+    
+}
+.name {
+    color: #000000;
+    cursor: pointer;
+    
+}
+
+.movie-name {
+    color: #000000;
+}
+
+
+img.Image-detail{
+    width: 252px;
+    float: left;
+    padding: 5px;
+    margin: 10px;
+}
+div.span7 {
+    width: 600px;
+    margin-left: 300px;
+}
+b{
+    color:#0094ff;
+}
+
+ul.pagination {
+    padding-left: 20px;
+    margin: 340px 0;
+    border-radius: 4px;
+}
