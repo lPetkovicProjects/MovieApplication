@@ -17,13 +17,10 @@ namespace MovieMvcProject.Controllers
         
         public ActionResult Index()
         {
-            List<Genre> genres = db.Genres.ToList();
+            IEnumerable<Genre> genres = db.Genres.ToList();
             return View(genres);
         }
-
-         
-
-        
+  
         public ActionResult Delete(int? id)
         {
             if (id == null)

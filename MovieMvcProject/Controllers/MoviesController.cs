@@ -24,17 +24,16 @@ namespace MovieMvcProject.Controllers
         }
         [AllowAnonymous]
         public ActionResult AllMovies(int? page)
-        {
-           // List<Movie> movies = db.Movies1.ToList().ToPagedList(page?? 1,5);
+        {         
             return View(db.Movies1.ToList().ToPagedList(page ?? 1, 10));
         }
-        [AllowAnonymous]
-        [HttpPost]
-        public ActionResult AllMovies()
-        {
-            List<Movie>movies = db.Movies1.ToList();
-            return View(movies);
-        }
+        //[AllowAnonymous]
+        //[HttpPost]
+        //public ActionResult AllMovies()
+        //{
+        //    List<Movie>movies = db.Movies1.ToList();
+        //    return View(movies);
+        //}
         [AllowAnonymous]
         public ActionResult Details(int? id)
         {
